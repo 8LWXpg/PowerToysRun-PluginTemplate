@@ -1,0 +1,14 @@
+{
+  "ID": "$guid1$",
+  "ActionKeyword": "plugin",
+  "Disabled": false,
+  "IsGlobal": false,
+  "Name": "$projectname$",
+  "Author": "",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "Website": "",
+  "ExecuteFileName": "Community.PowerToys.Run.Plugin.$safeprojectname$.dll",
+  "IcoPathDark": "Images\\$safeprojectname$.dark.png",
+  "IcoPathLight": "Images\\$safeprojectname$.light.png"
+}
