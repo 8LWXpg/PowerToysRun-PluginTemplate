@@ -1,6 +1,6 @@
 {
   "ID": "$guid1$",
-  "ActionKeyword": "plugin",
+  "ActionKeyword": "plug",
   "Disabled": false,
   "IsGlobal": false,
   "Name": "$projectname$",
