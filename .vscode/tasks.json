@@ -19,13 +19,7 @@
 		{
 			"label": "release",
 			"type": "shell",
-			"command": "gh",
-			"args": [
-				"release",
-				"create",
-				"(git describe --tags --abbrev=0)",
-				"PowerToysRun-PluginTemplate.zip",
-			],
+			"command": "gh release create (git describe --tags --abbrev=0) PowerToysRun-PluginTemplate.zip",
 			"group": {
 				"kind": "build",
 				"isDefault": true
