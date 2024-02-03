@@ -30,7 +30,7 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
 
         public string Description => Properties.Resources.plugin_description;
 
-        // TODO: remove dash from ID below and inside plugin.json
+        // TODO: remove dash then change to uppercase from ID below and inside plugin.json
         public static string PluginID => "$guid1$";
 
         // TODO: add additional options
