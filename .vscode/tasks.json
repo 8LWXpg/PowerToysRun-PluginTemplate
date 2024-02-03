@@ -1,0 +1,37 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "compress",
+			"type": "shell",
+			"command": "7z",
+			"args": [
+				"a",
+				"'-xr@.zipignore'",
+				"PowerToysRun-PluginTemplate.zip",
+				"*"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "release",
+			"type": "shell",
+			"command": "gh",
+			"args": [
+				"release",
+				"create",
+				"(git describe --tags --abbrev=0)",
+				"PowerToysRun-PluginTemplate.zip",
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"dependsOn": "compress",
+			"problemMatcher": []
+		}
+	]
+}
