@@ -16,6 +16,7 @@ foreach ($arch in $archs) {
 	dotnet build -c Release /p:Platform=$arch
 
 	Remove-Item "./out/$name/*" -Recurse -Force -ErrorAction Ignore
+	mkdir "./out/$name" -ErrorAction Ignore
 	Copy-Item "$releasePath/$assembly.dll", "$releasePath/plugin.json", "$releasePath/Images", "$releasePath/$assembly.deps.json" "./out/$name" -Recurse -Force
 	Compress-Archive "./out/$name" "./out/$name-$version-$arch.zip" -Force
 }
