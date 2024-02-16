@@ -44,6 +44,7 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
             },
         };
 
+        // TODO: return context menus for each Result (optional, remove if not needed)
         public List<ContextMenuResult> LoadContextMenus(Result selectedResult)
         {
             return new List<ContextMenuResult>(0);

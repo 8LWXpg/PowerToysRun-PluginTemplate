@@ -25,9 +25,9 @@
         <ProjectItem ReplaceParameters="false" TargetFileName="$safeprojectname$.light.png">Icon.light.png</ProjectItem>
       </Folder>
       <Folder Name="Lib" TargetFolderName="Lib" />
-      <ProjectItem ReplaceParameters="true" TargetFileName="Main.cs" OpenInEditor="true">Main.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Main.cs">Main.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="plugin.json">plugin.json</ProjectItem>
-      <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="README.md" OpenInEditor="true">README.md</ProjectItem>
       <ProjectItem ReplaceParameters="false" TargetFileName=".editorconfig">.editorconfig</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="debug.ps1">debug.ps1</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="release.ps1">release.ps1</ProjectItem>
