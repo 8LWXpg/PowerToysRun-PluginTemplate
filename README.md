@@ -9,6 +9,7 @@ This a template for Visual Studio to create a PowerToys Run plugin.
 3. Open Visual Studio 2022 and select the template named `PowerToys Run Plugin Template`.
 4. Copy `PowerToys.Settings.UI.Lib.dll`, `PowerToys.ManagedCommon.dll`, `PowerToys.Common.UI.dll` ,`Wox.Plugin.dll`, `Wox.Infrastructure.dll` from the PowerToys Run folder to `.\Lib` (using symlink or running `copyLib.ps1` is recommended).
 5. Right-click on `Properties\Resources.resx` and select `Run Custom Tool` (`Resources.Designer.cs` changes completely for unknown reasons).
+6. Follow TODOs in `Main.cs`.
 
 ## How to debug
 
