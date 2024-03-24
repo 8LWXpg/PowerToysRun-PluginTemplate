@@ -1,6 +1,6 @@
 # PowerToysRun Plugin Template
 
-This a template for Visual Studio to create a PowerToys Run plugin.
+This is a template for Visual Studio to create a PowerToys Run plugin.
 
 ## How to use
 
