@@ -19,7 +19,7 @@
 		{
 			"label": "tag",
 			"type": "shell",
-			"command": "git tag (Read-Host 'New tag')",
+			"command": "git tag (Read-Host 'New tag'); git push --tags",
 			"group": "build",
 			"dependsOn": "compress",
 			"problemMatcher": []
