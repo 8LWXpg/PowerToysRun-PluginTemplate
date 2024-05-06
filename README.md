@@ -41,3 +41,4 @@ If you have any suggestions or improvements, feel free to open an issue or a pul
 
 - [Template parameters](https://learn.microsoft.com/en-us/visualstudio/ide/template-parameters?view=vs-2022)
 - [Template schema reference](https://learn.microsoft.com/en-us/visualstudio/extensibility/visual-studio-template-schema-reference?view=vs-2022)
+- [Template tags](https://learn.microsoft.com/en-us/visualstudio/ide/template-tags?view=vs-2022)
