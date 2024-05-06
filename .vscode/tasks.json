@@ -17,6 +17,13 @@
 			"problemMatcher": []
 		},
 		{
+			"label": "tag",
+			"type": "shell",
+			"command": "git tag (Read-Host 'New tag')",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
 			"label": "release",
 			"type": "shell",
 			"command": "gh release create (git describe --tags --abbrev=0) PowerToysRun-PluginTemplate.zip",
@@ -24,7 +31,7 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"dependsOn": "compress",
+			"dependsOn": "tag",
 			"problemMatcher": []
 		}
 	]
