@@ -33,7 +33,7 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
         // TODO: remove dash then change to uppercase from ID below and inside plugin.json
         public static string PluginID => "$guid1$";
 
-        // TODO: add additional options
+        // TODO: add additional options (optional)
         public IEnumerable<PluginAdditionalOption> AdditionalOptions => new List<PluginAdditionalOption>()
         {
             new PluginAdditionalOption()
@@ -44,7 +44,7 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
             },
         };
 
-        // TODO: return context menus for each Result (optional, remove if not needed)
+        // TODO: return context menus for each Result (optional)
         public List<ContextMenuResult> LoadContextMenus(Result selectedResult)
         {
             return new List<ContextMenuResult>(0);
@@ -77,7 +77,7 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
             return results;
         }
 
-        // TODO: return delayed query results (optional, remove if not needed)
+        // TODO: return delayed query results (optional)
         public List<Result> Query(Query query, bool delayedExecution)
         {
             ArgumentNullException.ThrowIfNull(query);
@@ -119,11 +119,11 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
         {
             if (theme == Theme.Light || theme == Theme.HighContrastWhite)
             {
-                _iconPath = "Images/$safeprojectname$.light.png";
+                _iconPath = "Images/$projectname$.light.png";
             }
             else
             {
-                _iconPath = "Images/$safeprojectname$.dark.png";
+                _iconPath = "Images/$projectname$.dark.png";
             }
         }
 

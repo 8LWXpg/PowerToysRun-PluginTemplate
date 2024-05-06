@@ -3,8 +3,10 @@
     <Name>PowerToys Run Plugin Template</Name>
     <Description>Template for PowerToys Run plugin</Description>
     <ProjectType>CSharp</ProjectType>
-    <ProjectSubType>
-    </ProjectSubType>
+    <ProjectSubType></ProjectSubType>
+    <LanguageTag>csharp</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+    <ProjectTypeTag>library</ProjectTypeTag>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>Plugin</DefaultName>
@@ -21,8 +23,8 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
       </Folder>
       <Folder Name="Images" TargetFolderName="Images">
-        <ProjectItem ReplaceParameters="false" TargetFileName="$safeprojectname$.dark.png">Icon.dark.png</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="$safeprojectname$.light.png">Icon.light.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.dark.png">Icon.dark.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.light.png">Icon.light.png</ProjectItem>
       </Folder>
       <Folder Name="Lib" TargetFolderName="Lib" />
       <ProjectItem ReplaceParameters="true" TargetFileName="Main.cs">Main.cs</ProjectItem>

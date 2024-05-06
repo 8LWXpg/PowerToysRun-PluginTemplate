@@ -5,6 +5,7 @@ $name = '$safeprojectname$'
 $assembly = "Community.PowerToys.Run.Plugin.$name"
 $version = "v$((Get-Content ./plugin.json | ConvertFrom-Json).Version)"
 $archs = @('x64', 'arm64')
+$tempDir = './out/temp'
 
 git tag $version
 git push --tags
@@ -15,10 +16,10 @@ foreach ($arch in $archs) {
 
 	dotnet build -c Release /p:Platform=$arch
 
-	Remove-Item "./out/$name/*" -Recurse -Force -ErrorAction Ignore
-	mkdir "./out/$name" -ErrorAction Ignore
-	Copy-Item "$releasePath/$assembly.dll", "$releasePath/plugin.json", "$releasePath/Images", "$releasePath/$assembly.deps.json" "./out/$name" -Recurse -Force
-	Compress-Archive "./out/$name" "./out/$name-$version-$arch.zip" -Force
+	Remove-Item "$tempDir/*" -Recurse -Force -ErrorAction Ignore
+	mkdir "$tempDir" -ErrorAction Ignore
+	Copy-Item "$releasePath/$assembly.dll", "$releasePath/plugin.json", "$releasePath/Images", "$releasePath/$assembly.deps.json" "$tempDir" -Recurse -Force
+	Compress-Archive "$tempDir" "./out/$name-$version-$arch.zip" -Force
 }
 
 gh release create $version (Get-ChildItem ./out/*.zip)

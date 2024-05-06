@@ -9,7 +9,7 @@
 			"command": "7z",
 			"args": [
 				"a",
-				"'-xr@.zipignore'",
+				"'-xr@.vstemplate_ignore'",
 				"PowerToysRun-PluginTemplate.zip",
 				"*"
 			],
