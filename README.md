@@ -1,4 +1,4 @@
-<img width="100%" alt="title image" src="https://github.com/8LWXpg/PowerToysRun-PluginTemplate/assets/105704427/0a6476f8-91b0-4245-be5b-9ec51f4a6a76">
+![title image](https://github.com/8LWXpg/PowerToysRun-PluginTemplate/assets/105704427/0a6476f8-91b0-4245-be5b-9ec51f4a6a76)
 
 # PowerToysRun Plugin Template
 
