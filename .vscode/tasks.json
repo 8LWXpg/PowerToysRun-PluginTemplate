@@ -21,6 +21,7 @@
 			"type": "shell",
 			"command": "git tag (Read-Host 'New tag')",
 			"group": "build",
+			"dependsOn": "compress",
 			"problemMatcher": []
 		},
 		{
