@@ -18,7 +18,13 @@ foreach ($arch in $archs) {
 
 	Remove-Item "$tempDir/*" -Recurse -Force -ErrorAction Ignore
 	mkdir "$tempDir" -ErrorAction Ignore
-	Copy-Item "$releasePath/$assembly.dll", "$releasePath/plugin.json", "$releasePath/Images", "$releasePath/$assembly.deps.json" "$tempDir" -Recurse -Force
+	$items = @(
+		"$releasePath/$assembly.deps.json",
+		"$releasePath/$assembly.dll",
+		"$releasePath/plugin.json",
+		"$releasePath/Images"
+	)
+	Copy-Item $items "$tempDir" -Recurse -Force
 	Compress-Archive "$tempDir" "./out/$name-$version-$arch.zip" -Force
 }
 
