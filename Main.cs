@@ -44,6 +44,11 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
             },
         };
 
+        public void UpdateSettings(PowerLauncherPluginSettings settings)
+        {
+            _setting = settings?.AdditionalOptions?.FirstOrDefault(x => x.Key == Setting)?.Value ?? false;
+        }
+
         // TODO: return context menus for each Result (optional)
         public List<ContextMenuResult> LoadContextMenus(Result selectedResult)
         {
@@ -130,11 +135,6 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
         public Control CreateSettingPanel()
         {
             throw new NotImplementedException();
-        }
-
-        public void UpdateSettings(PowerLauncherPluginSettings settings)
-        {
-            _setting = settings?.AdditionalOptions?.FirstOrDefault(x => x.Key == Setting)?.Value ?? false;
         }
 
         public void ReloadData()
