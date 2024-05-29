@@ -30,7 +30,7 @@ Visual Studio 2022 caches the templates, so you can't simply replace the zip fil
 
 1. Remove previous versions of the template.
 2. Start Visual Studio 2022 then select `Create a new project`, this loads the templates.
-3. Close Visual Studio 2022.
+3. Close Visual Studio 2022 or click `Back`.
 4. Move the new zip to `~\Documents\Visual Studio 2022\Templates\ProjectTemplates`.
 
 ## Help improve this template
