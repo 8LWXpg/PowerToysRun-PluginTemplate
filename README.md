@@ -15,8 +15,7 @@ This is a template for Visual Studio to create a PowerToys Run plugin.
    - `PowerToys.Settings.UI.Lib.dll`
    - `Wox.Infrastructure.dll`
    - `Wox.Plugin.dll`
-5. Right-click on `Properties\Resources.resx` and select `Run Custom Tool` (`Resources.Designer.cs` changes completely for unknown reasons).
-6. Follow TODOs in `Main.cs`.
+5. Follow TODOs in `Main.cs`.
 
 ## How to debug
 
