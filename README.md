@@ -23,6 +23,30 @@ This is a template for Visual Studio to create a PowerToys Run plugin.
 2. Run `debug.ps1`.
 3. Attach to the process `PowerToys.PowerLauncher`.
 
+## Template structure
+
+```plaintext
+MyPlugin
+│   MyPlugin.sln
+└───MyPlugin
+    │   copyLib.ps1
+    │   debug.ps1
+    │   .editorconfig
+    │   MyPlugin.csproj
+    │   Main.cs
+    │   plugin.json
+    │   README.md
+    │   release.ps1
+    ├───Images
+    │       Icon.dark.png
+    │       Icon.light.png
+    ├───Lib
+    └───Properties
+            Resources.Designer.cs
+            Resources.resx
+
+```
+
 ## Update the template
 
 Visual Studio 2022 caches the templates, so you can't simply replace the zip file.
