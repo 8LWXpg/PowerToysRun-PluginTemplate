@@ -23,6 +23,10 @@ This is a template for Visual Studio to create a PowerToys Run plugin.
 2. Run `debug.ps1`.
 3. Attach to the process `PowerToys.PowerLauncher`.
 
+## Demo
+
+Check [ProcessKiller](https://github.com/8LWXpg/PowerToysRun-ProcessKiller).
+
 ## Template structure
 
 ```plaintext
