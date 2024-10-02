@@ -38,9 +38,9 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
         {
             new PluginAdditionalOption()
             {
+                PluginOptionType= PluginAdditionalOption.AdditionalOptionType.Checkbox,
                 Key = Setting,
                 DisplayLabel = Properties.Resources.plugin_setting,
-                Value = false,
             },
         };
 
