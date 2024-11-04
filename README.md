@@ -17,6 +17,12 @@ This is a template for Visual Studio to create a PowerToys Run plugin.
    - `Wox.Plugin.dll`
 5. Follow TODOs in `Main.cs`.
 
+### Scripts
+
+- `copyLib.ps1` - copy dependencies.
+- `debug.ps1` - move debug files to destination.
+- `release.ps1` - create release on github with github cli.
+
 ## How to debug
 
 1. Build the project.
