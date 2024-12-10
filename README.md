@@ -9,7 +9,7 @@ This is a template for Visual Studio to create a PowerToys Run plugin.
 ### Prerequisite
 
 - [gsudo](https://github.com/gerardog/gsudo) \
-  Or if you're using Windows later than Windows 11 24H2, change the `sudo {}` to `sudo powershell {}`.
+  Or if you're using Windows later than Windows 11 24H2, change `sudo {}` in `debug.ps1` and `copyLib.ps1` to `sudo powershell {}`.
 
 ### Usage
 
