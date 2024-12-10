@@ -115,7 +115,7 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
             return Properties.Resources.plugin_description;
         }
 
-        private void OnThemeChanged(Theme oldtheme, Theme newTheme)
+        private void OnThemeChanged(Theme oldTheme, Theme newTheme)
         {
             UpdateIconPath(newTheme);
         }
