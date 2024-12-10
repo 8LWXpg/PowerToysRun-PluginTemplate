@@ -33,7 +33,6 @@
       <ProjectItem ReplaceParameters="false" TargetFileName=".editorconfig">.editorconfig</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="debug.ps1">debug.ps1</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="release.ps1">release.ps1</ProjectItem>
-      <ProjectItem ReplaceParameters="false" TargetFileName="copyLib.ps1">copyLib.ps1</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

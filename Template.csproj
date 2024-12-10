@@ -28,24 +28,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Reference Include="PowerToys.Common.UI">
-            <HintPath>.\Lib\PowerToys.Common.UI.dll</HintPath>
-        </Reference>
-        <Reference Include="PowerToys.ManagedCommon">
-            <HintPath>.\Lib\PowerToys.ManagedCommon.dll</HintPath>
-        </Reference>
-        <Reference Include="PowerToys.Settings.UI.Lib">
-            <HintPath>.\Lib\PowerToys.Settings.UI.Lib.dll</HintPath>
-        </Reference>
-        <Reference Include="Wox.Infrastructure">
-            <HintPath>.\Lib\Wox.Infrastructure.dll</HintPath>
-        </Reference>
-        <Reference Include="Wox.Plugin">
-            <HintPath>.\Lib\Wox.Plugin.dll</HintPath>
-        </Reference>
-    </ItemGroup>
-
-    <ItemGroup>
         <EmbeddedResource Update="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -64,6 +46,10 @@
         <None Update="Images\*.png">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Community.PowerToys.Run.Plugin.Dependencies" Version="0.86.0" />
     </ItemGroup>
 
 </Project>
