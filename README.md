@@ -9,13 +9,13 @@ This is a template for Visual Studio to create a PowerToys Run plugin.
 ### Prerequisite
 
 - [gsudo](https://github.com/gerardog/gsudo) \
-  Or if you're using Windows later than Windows 11 24H2, change `sudo {...}` in `debug.ps1` and `copyLib.ps1` to `sudo powershell {...}`.
+  Or if you're using Windows later than Windows 11 24H2, change `sudo {...}` in `debug.ps1` to `sudo powershell {...}`.
 
 ### Usage
 
 1. Download the latest release.
 1. Move the zip to `~\Documents\Visual Studio 2022\Templates\ProjectTemplates`.
-1. Change `$ptPath` in `debug.ps1` and `copyLib.ps1` to your PowerToys install location, i.e. `$env:LOCALAPPDATA\PowerToys` for user scope install.
+1. Change `$ptPath` in `debug.ps1` to your PowerToys install location, i.e. `$env:LOCALAPPDATA\PowerToys` for user scope install.
 1. Open Visual Studio 2022 and select the template named `PowerToys Run Plugin Template`.
 1. Copy `.dll` from the PowerToys Run folder to `.\Lib` (using symlink or running `copyLib.ps1` is recommended).
    - `PowerToys.Common.UI.dll`
