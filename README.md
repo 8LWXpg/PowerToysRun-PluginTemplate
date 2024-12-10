@@ -6,16 +6,24 @@ This is a template for Visual Studio to create a PowerToys Run plugin.
 
 ## How to use
 
+### Prerequisite
+
+- [gsudo](https://github.com/gerardog/gsudo) \
+  Or if you're using Windows later than Windows 11 24H2, change the `sudo {}` to `sudo powershell {}`.
+
+### Usage
+
 1. Download the latest release.
-2. Move the zip to `~\Documents\Visual Studio 2022\Templates\ProjectTemplates`.
-3. Open Visual Studio 2022 and select the template named `PowerToys Run Plugin Template`.
-4. Copy `.dll` from the PowerToys Run folder to `.\Lib` (using symlink or running `copyLib.ps1` is recommended).
+1. Move the zip to `~\Documents\Visual Studio 2022\Templates\ProjectTemplates`.
+1. Change `$ptPath` in `debug.ps1` and `copyLib.ps1` to your PowerToys install location, i.e. `$env:LOCALAPPDATA\PowerToys` for user scope install.
+1. Open Visual Studio 2022 and select the template named `PowerToys Run Plugin Template`.
+1. Copy `.dll` from the PowerToys Run folder to `.\Lib` (using symlink or running `copyLib.ps1` is recommended).
    - `PowerToys.Common.UI.dll`
    - `PowerToys.ManagedCommon.dll`
    - `PowerToys.Settings.UI.Lib.dll`
    - `Wox.Infrastructure.dll`
    - `Wox.Plugin.dll`
-5. Follow TODOs in `Main.cs`.
+1. Follow TODOs in `Main.cs`.
 
 ### Scripts
 
@@ -26,8 +34,8 @@ This is a template for Visual Studio to create a PowerToys Run plugin.
 ## How to debug
 
 1. Build the project.
-2. Run `debug.ps1`.
-3. Attach to the process `PowerToys.PowerLauncher`.
+1. Run `debug.ps1`.
+1. Attach to the process `PowerToys.PowerLauncher`.
 
 ## Demo
 
@@ -62,9 +70,9 @@ MyPlugin
 Visual Studio 2022 caches the templates, so you can't simply replace the zip file.
 
 1. Remove previous versions of the template.
-2. Start Visual Studio 2022 then select `Create a new project`, this loads the templates.
-3. Close Visual Studio 2022 or click `Back`.
-4. Move the new zip to `~\Documents\Visual Studio 2022\Templates\ProjectTemplates`.
+1. Start Visual Studio 2022 then select `Create a new project`, this loads the templates.
+1. Close Visual Studio 2022 or click `Back`.
+1. Move the new zip to `~\Documents\Visual Studio 2022\Templates\ProjectTemplates`.
 
 ## Help improve this template
 
