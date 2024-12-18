@@ -10,7 +10,7 @@ sudo {
 	$ptPath = 'C:\Program Files\PowerToys'
 	$projectName = '$projectname$'
 	$safeProjectName = '$safeprojectname$'
-	$debug = '.\bin\x64\Debug\net8.0-windows'
+	$debug = '.\bin\x64\Debug\net9.0-windows'
 	$dest = "$env:LOCALAPPDATA\Microsoft\PowerToys\PowerToys Run\Plugins\$projectName"
 	$files = @(
 		"Community.PowerToys.Run.Plugin.$safeProjectName.deps.json",
