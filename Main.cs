@@ -16,20 +16,13 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
     public class Main : IPlugin, IPluginI18n, IContextMenu, ISettingProvider, IReloadable, IDisposable, IDelayedExecutionPlugin
     {
         private const string Setting = nameof(Setting);
-
         // current value of the setting
         private bool _setting;
-
         private PluginInitContext _context;
-
         private string _iconPath;
-
         private bool _disposed;
-
-        public string Name => Properties.Resources.plugin_name;
-
-        public string Description => Properties.Resources.plugin_description;
-
+        public string Name => Resources.plugin_name;
+        public string Description => Resources.plugin_description;
         // TODO: remove dash from ID below and inside plugin.json
         public static string PluginID => "$guid1$";
 
@@ -40,7 +33,7 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
             {
                 PluginOptionType= PluginAdditionalOption.AdditionalOptionType.Checkbox,
                 Key = Setting,
-                DisplayLabel = Properties.Resources.plugin_setting,
+                DisplayLabel = Resources.plugin_setting,
             },
         };
 
@@ -107,12 +100,12 @@ namespace Community.PowerToys.Run.Plugin.$safeprojectname$
 
         public string GetTranslatedPluginTitle()
         {
-            return Properties.Resources.plugin_name;
+            return Resources.plugin_name;
         }
 
         public string GetTranslatedPluginDescription()
         {
-            return Properties.Resources.plugin_description;
+            return Resources.plugin_description;
         }
 
         private void OnThemeChanged(Theme oldTheme, Theme newTheme)
