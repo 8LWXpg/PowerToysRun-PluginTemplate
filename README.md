@@ -4,6 +4,18 @@
 
 This is a template for Visual Studio to create a PowerToys Run plugin.
 
+## How to customize
+
+### Prerequisite
+
+- `7z` (from 7zip or NanaZip) available in `PATH`.
+
+### Steps
+
+1. Clone or fork the repo.
+1. Make your desired change.
+1. run `./scripts/build.ps1 compress -copy` in PowerShell.
+
 ## How to use
 
 ### Prerequisite
