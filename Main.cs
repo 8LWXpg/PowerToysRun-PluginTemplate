@@ -1,3 +1,4 @@
+using Community.PowerToys.Run.Plugin.$safeprojectname$.Properties;
 using System;
 using System.Collections;
 using System.Collections.Generic;
