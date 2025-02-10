@@ -13,7 +13,7 @@ This is a template for Visual Studio to create a PowerToys Run plugin.
 ### Steps
 
 1. Clone or fork the repo.
-1. Make your desired change.
+1. Make your desired change (like changing `indent_style` and `end_of_line` in `.editorconfig`).
 1. run `./scripts/build.ps1 compress -copy` in PowerShell.
 
 ## How to use
