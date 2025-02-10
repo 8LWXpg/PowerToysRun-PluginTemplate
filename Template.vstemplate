@@ -26,7 +26,6 @@
         <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.dark.png">Icon.dark.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.light.png">Icon.light.png</ProjectItem>
       </Folder>
-      <Folder Name="Lib" TargetFolderName="Lib" />
       <ProjectItem ReplaceParameters="true" TargetFileName="Main.cs">Main.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="plugin.json">plugin.json</ProjectItem>
       <ProjectItem ReplaceParameters="false" TargetFileName="README.md" OpenInEditor="true">README.md</ProjectItem>
