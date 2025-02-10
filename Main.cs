@@ -1,10 +1,4 @@
 using Community.PowerToys.Run.Plugin.$safeprojectname$.Properties;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
 using System.Windows.Controls;
 using ManagedCommon;
 using Microsoft.PowerToys.Settings.UI.Library;
