@@ -52,7 +52,6 @@ Check [ProcessKiller](https://github.com/8LWXpg/PowerToysRun-ProcessKiller).
 MyPlugin
 │   MyPlugin.sln
 └───MyPlugin
-    │   copyLib.ps1
     │   debug.ps1
     │   .editorconfig
     │   MyPlugin.csproj
@@ -63,7 +62,6 @@ MyPlugin
     ├───Images
     │       Icon.dark.png
     │       Icon.light.png
-    ├───Lib
     └───Properties
             Resources.Designer.cs
             Resources.resx
