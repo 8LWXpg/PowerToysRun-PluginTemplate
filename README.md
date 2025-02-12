@@ -4,6 +4,8 @@
 
 This is a template for Visual Studio to create a PowerToys Run plugin.
 
+For dotnet version so you don't need to open Visual Studio [PowerToysRun-DotentPluginTemplate](https://github.com/8LWXpg/PowerToysRun-DotentPluginTemplate).
+
 ## How to customize
 
 ### Prerequisite
