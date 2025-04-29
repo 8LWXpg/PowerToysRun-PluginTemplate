@@ -1,4 +1,5 @@
 scripts
 .git
+.github
 .vstemplate_ignore
 LICENSE
